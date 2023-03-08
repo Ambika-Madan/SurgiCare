@@ -1,0 +1,43 @@
+*{ 
+    margin: 0;
+    padding: 0;
+
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 150%;
+    border: 6px solid black;
+    border-radius: 60px;
+}
+.navbar{
+    display: flex;
+}
+.nav-list{
+   width:20% ;
+   background-color: rgb(139, 207, 215);
+   display: flex;
+   align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 23px 30px;
+
+
+
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color:grey(167, 99, 16);
+
+
+}
+.rightNav{
+    background-color: aquamarine;
+    width: 50;
+    text-align: center;
+}
