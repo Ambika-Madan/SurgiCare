@@ -10,7 +10,7 @@
     align-items: center;
 }
 .logo img{
-    width: 150%;
+    width: 15%;
     border: 6px solid black;
     border-radius: 60px;
 }
@@ -18,14 +18,14 @@
     display: flex;
 }
 .nav-list{
-   width:20% ;
+   width:70% ;
    background-color: rgb(139, 207, 215);
    display: flex;
-   align-items: center;
+   align-items: baseline;
 }
 .nav-list li{
     list-style: none;
-    padding: 23px 30px;
+    padding: 7px 8px;
 
 
 
@@ -37,7 +37,26 @@
 
 }
 .rightNav{
-    background-color: aquamarine;
-    width: 50;
-    text-align: center;
+    background-color: rgb(17, 137, 97);
+    width: 50%;
+    text-align: right;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid brown;
+    border-radius: 9px;
+
+
+}
+.background{
+    background: rgbs(0,0,0,0.7)url('../img/doctor.jpg');
+}
+.Log in {
+    background-color: blanchedalmond;
+    
+}
+.google{align-items: center;
+    height: 30%;
+    background-color: antiquewhite;
 }
