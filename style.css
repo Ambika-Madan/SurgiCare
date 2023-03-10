@@ -3,55 +3,41 @@
     padding: 0;
 
 }
-.logo{
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo img{
-    width: 15%;
-    border: 6px solid black;
-    border-radius: 60px;
-}
-.navbar{
-    display: flex;
-}
-.nav-list{
-   width:70% ;
-   background-color: rgb(139, 207, 215);
-   display: flex;
-   align-items: baseline;
-}
-.nav-list li{
-    list-style: none;
-    padding: 7px 8px;
+ body{
+    background-image: url("img/doctor.jpg")  ;
+    background-color: beige;
+} 
 
-
-
+nav {
+    background-color: #4ca2af;
+    overflow: hidden;
 }
-.nav-list li a:hover{
-    text-decoration: none;
-    color:grey(167, 99, 16);
-
-
-}
-.rightNav{
-    background-color: rgb(17, 137, 97);
-    width: 50%;
-    text-align: right;
-}
-#search{
-    padding: 5px;
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
     font-size: 17px;
-    border: 2px solid brown;
-    border-radius: 9px;
+  }
+nav a {width: 80px;;
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+.active {
+    background-color: #ccc;
+    color: #333
+}
 
 
-}
-.background{
-    background: rgbs(0,0,0,0.7)url('../img/doctor.jpg');
-}
 .Log in {
     background-color: blanchedalmond;
     
@@ -59,4 +45,7 @@
 .google{align-items: center;
     height: 30%;
     background-color: antiquewhite;
+}
+.rightNav{
+    align-items: right;
 }
