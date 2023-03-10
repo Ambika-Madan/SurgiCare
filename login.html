@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SurgiCare - Book your Appointment Now</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Login</title>
+	<link rel="stylesheet" href="login.css" />
+	
 </head>
+
 <body>
-    <div class= "Log in">
-        <button class="btn-color" id="login" type="submit">
-            
-            <span id="spanLogin">Login</span>
-            <span id="spanLoadng">Loading...</span>
-        </button>
-
-    </div>
-<p>Don`t have an account?<a href>Sign Up</a></p>
-<p>Forget password account<a href>Forget Password</a></p>
-<div class="google">
-    <button class="btn-google" id="sign-in">
-        <a href="SUR.html" title="login">
-        <img src=""img/doctor.jpg" width="25" alt=""/>
-        <span>Login with Google</span>
-
-    </button>
-</div>
+	<div class="login-page">
+		<div class="login-form">
+			<h3>Login to access your Dashboard</h3>
+			<form id="logInForm">
+				<p id="error"></p>
+				<p id="errorPwd"></p>
+				<div class="email">
+					<input type="email" id="email" placeholder="Email" required />
+				</div>
+				<div class="password">
+					<input type="password" id="password" placeholder="Password" required />
+				</div>
+				<div class="log-in">
+					<button class="btn-color" id="login" type="submit">
+						<span id="spanLogin">Login</span>
+						<span id="spanLoading">Loading...</span>
+					</button>
+				</div>
+			</form>
+			<p>Don't have an account?<a href>Sign up</a></p>
+			<p>Forget password account?<a href>Forget password</a></p>
+			<div class="google">
+				<button class="btn-google" id="sign-in">
+                    <a href="SUR.html">Login with Google</a>
+				</button>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

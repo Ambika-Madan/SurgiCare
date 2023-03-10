@@ -32,15 +32,11 @@ nav a:hover {
     background-color: #ddd;
     color: #333;
 }
-.active {
-    background-color: #ccc;
-    color: #333
-}
 
 
 .Log in {
     background-color: blanchedalmond;
-    
+    font-size: larger;
 }
 .google{align-items: center;
     height: 30%;
