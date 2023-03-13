@@ -5,15 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SurgiCare - Book your Appointment Now</title>
+    <script src="calendar.js"></script>
     <!DOCTYPE html>
     <html>
       <head>
         <title>Doctor Appointment Calendar</title>
-        <style>
-          
-        </style>
+        
       </head>
     <body>
         
+        <h1>Doctor Appointment Booking</h1>
+        <ul class="doctor-list">
+          <li class="doctor" onclick="showCalendar('dr-john-smith')">Dr. John Smith</li>
+          <li class="doctor" onclick="showCalendar('dr-sarah-johnson')">Dr. Sarah Johnson</li>
+          <li class="doctor" onclick="showCalendar('dr-david-lee')">Dr. David Lee</li>
+          <li class="doctor" onclick="showCalendar('dr-emily-brown')">Dr. Emily Brown</li>
+        </ul>
+        
+        <div id="dr-john-smith-calendar" style="display: none;">
+          <!-- Calendar for Dr. John Smith -->
+        </div>
+        <div id="dr-sarah-johnson-calendar" style="display: none;">
+          <!-- Calendar for Dr. Sarah Johnson -->
+        </div>
+        <div id="dr-david-lee-calendar" style="display: none;">
+          <!-- Calendar for Dr. David Lee -->
+        </div>
+        <div id="dr-emily-brown-calendar" style="display: none;">
+          <!-- Calendar for Dr. Emily Brown -->
+        </div>
     </body>
 </html>
