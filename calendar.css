@@ -1,0 +1,38 @@
+#calendar {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  #calendar table {
+    width: 20%;
+    border-collapse: collapse;
+  }
+  
+  #calendar th {
+    background-color: #ddd;
+    border: 10px solid #ccc;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  #calendar td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  #calendar td:hover {
+    background-color: #eee;
+  }
+  
+  #calendar td.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  #calendar .prev-month,
+  #calendar .next-month {
+    color: #999;
+  }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurgiCare - Book your Appointment Now</title>
+    <link rel="stylesheet" href ="calendar.css">
+</head>
+<body>
+    <!-- <div id="calendar">
+        <script src="calendar.js"></script>
+       
+      </div>
+       -->
+      
+       <!DOCTYPE html>
+       <html>
+       <head>
+           <title>Calendar</title>
+       </head>
+       <body>
+       
+           <table>
+               <tr>
+                   <th>Monday</th>
+                   <th>Tuesday</th>
+                   <th>Wednesday</th>
+                   <th>Thursday</th>
+                   <th>Friday</th>
+                   <th>Saturday</th>
+                   <th>Sunday</th>
+               </tr>
+               <tr>
+                   <td id="day1">1</td>
+                   <td id="day2">2</td>
+                   <td id="day3">3</td>
+                   <td id="day4">4</td>
+                   <td id="day5">5</td>
+                   <td id="day6">6</td>
+                   <td id="day7">7</td>
+               </tr>   
+                   <td id="day1">8</td>
+                   <td id="day2">9</td>
+                   <td id="day3">10</td>
+                   <td id="day4">11</td>
+                   <td id="day5">12</td>
+                   <td id="day6">13</td>
+                   <td id="day7">14</td>
+                </tr>
+                <tr>
+                   <td id="day1">15</td>
+                   <td id="day2">16</td>
+                   <td id="day3">17</td>
+                   <td id="day4">18</td>
+                   <td id="day5">19</td>
+                   <td id="day6">20</td>
+                   <td id="day7">21</td>
+                </tr>
+                <tr>
+                   <td id="day1">22</td>
+                   <td id="day2">23</td>
+                   <td id="day3">24</td>
+                   <td id="day4">25</td>
+                   <td id="day5">26</td>
+                   <td id="day6">27</td>
+                   <td id="day7">28</td>
+                </tr>
+                <tr>
+                   <td id="day1">29</td>
+                   <td id="day2">30</td>
+                   <td id="day3">31</td>
+                </tr>
+                   
+               </tr>
+               </tr>
+               </tr>
+               </tr>
+               </tr>
+               <!-- repeat rows for other weeks of the month -->
+           </table>
+       
+           <script>
+               // add event listeners to each day cell
+               var dayCells = document.getElementsByTagName("td");
+               for (var i = 0; i < dayCells.length; i++) {
+                   dayCells[i].addEventListener("click", function() {
+                       // get the day number from the cell ID
+                       var dayNumber = this.id.substring(3);
+                       // construct the URL for the page to open
+                       var url = "page" + dayNumber + ".html";
+                       // open the page in a new window/tab
+                       window.open(url);
+                   });
+               }
+           </script>
+       
+       </body>
+       </html>
+         
+      
+      
+</body>
+</html>
