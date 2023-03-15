@@ -13,14 +13,15 @@ nav {
     overflow: hidden;
 }
 .topnav input[type=text] {
-    float: right;
+    float: right ;
     padding: 6px;
     border: none;
     margin-top: 8px;
-    margin-right: 16px;
+    margin-right: 1px;
     font-size: 17px;
+   
   }
-nav a {width: 80px;;
+nav a {width: 60px;;
     float: left;
     color: #fff;
     text-align: center;
@@ -42,9 +43,19 @@ nav a:hover {
     height: 30%;
     background-color: antiquewhite;
 }
-.rightNav{
-    align-items: right;
+.rightnav{
+    align-items: center;
+    text-align: right;
 }
 .about{
     
 }
+
+.rightnav form {
+    display: inline-block;
+  }
+  
+.rghtnav label, .rightnav input, .rightnav button {
+    margin: 10px 50px;
+    font-size: 16px;
+  }
