@@ -1,3 +1,6 @@
+body{
+	
+}
 .Log in {
     background-color: blanchedalmond;
     font-size: larger;
@@ -29,7 +32,7 @@ input {
 .login-form {
 	text-align: center;
 	width: 50%;
-	color: #1590a9;
+	color: #109bb6;
 	font-weight: bold;
 }
 .login-form h3 {
