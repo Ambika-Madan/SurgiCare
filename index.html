@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Login</title>
+	<link rel="stylesheet" href="login.css" />
+	
+</head>
+
+<body>
+    <div class="category">
+       <button class="btn-color" id="doctor" type="submit">Doctor
+       </button>
+       <button class="btn-color" id="patient" type="submit">Patient</button>
+    </div>
+	<div class="login-page">
+		<div class="login-form">
+			<h3>Login to access your Dashboard</h3>
+			<form id="logInForm">
+				<p id="error"></p>
+				<p id="errorPwd"></p>
+				<div class="email">
+					<input type="email" id="email" placeholder="Email" required />
+				</div>
+				<div class="password">
+					<input type="password" id="password" placeholder="Password" required />
+				</div>
+				<div class="log-in">
+					<button class="btn-color" id="login" type="submit">
+                        <a href="SUR.html">
+						<span id="spanLogin">Login</span>
+						<span id="spanLoading">Loading...</span>
+					</button>
+				</div>
+			</form>
+			<p>Don't have an account?<a href="signup.html">Sign up</a></p>
+			<p>Forget password account?<a href>Forget password</a></p>
+			<div class="google">
+				<button class="btn-google" id="sign-in">
+                    <a href="SUR.html">Login with Google</a>
+				</button>
+			</div>
+			
+			</div>
+        </div>
+	</div>
+</body>
+</html>
