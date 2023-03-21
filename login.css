@@ -1,8 +1,6 @@
-body{
-	
-}
+
 .Log in {
-    background-color: blanchedalmond;
+    background-color: rgb(131, 161, 173);
     font-size: larger;
 }
 .google{align-items: center;
@@ -10,20 +8,20 @@ body{
     background-color: antiquewhite;
 }
 body {
-	font-family: "Raleway", sans-serif;
+	font:sans-serif;
 }
 .login-page {
 	justify-content: center;
 	display: flex;
 	height: 100vh;
 	align-items: center;
-	background-color: #e8e5ee;
+	background-color: #a1b8c4;
 }
 input {
 	font-size: 19px;
 	width: 90%;
 	height: 40px;
-	border: none;
+	border: black;
 	padding-left: 10px;
 	outline: none;
 	box-shadow: 0 4px 8px 0 rgba(148, 148, 148, 0.19),
