@@ -26,7 +26,7 @@
   .calendar-header {
     grid-column: 1 / -1;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
   }
 
@@ -44,7 +44,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #555;
     border: 1px solid #ddd;
@@ -83,7 +83,7 @@
   /* Day cells - number */
   .day .number {
     position: absolute;
-    top: 5px;
+    top: 6px;
     right: 5px;
   }
 
