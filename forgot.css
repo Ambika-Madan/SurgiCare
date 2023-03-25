@@ -1,13 +1,15 @@
-body{
-    background-color: rgb(116, 185, 185);
+body{ background-image:url("img/blue.png");
+    padding-top: 18%;
+    padding-left: 40%;
+   
 }
-.email{padding-left: 45%;
-    padding-top: 20%;
+.email{padding-left: 8%;
+    padding-top: 2%;
 align-items: center;
 }
 .password
 {
-    padding-left: 45%;
+    padding-left: 8%;
 }
 .heading{
     padding-left: 40%;
@@ -15,5 +17,5 @@ align-items: center;
 
 }
 .submit{
-    padding-left: 49%;
+    padding-left: 15%;
 }
