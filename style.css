@@ -4,13 +4,16 @@
 
 }
  body{
-    background-image: url("img/doctor.jpg")  ;
+      background-image: url(img/blue.png);
     background-color: beige;
 } 
 
 nav {
     background-color: #4ca2af;
     overflow: hidden;
+    border-style: double;
+    border-width: 10%;
+    
 }
 .topnav input[type=text] {
     float: right ;
@@ -19,15 +22,19 @@ nav {
     margin-top: 8px;
     margin-right: 1px;
     font-size: 17px;
+    border-style: ridge;
+    border-width: 3%;
+    border-color: black;
    
   }
-nav a {width: 60px;;
+nav a {width: 150px;
     float: left;
     color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    
 }
 nav a:hover {
     background-color: #ddd;
@@ -43,19 +50,17 @@ nav a:hover {
     height: 30%;
     background-color: antiquewhite;
 }
-.rightnav{
-    align-items: center;
+.nav .rightnav{
+    align-items: right;
     text-align: right;
-}
-.about{
+    justify-content: left;
     
 }
 
-.rightnav form {
-    display: inline-block;
-  }
+
+    
+
   
-.rghtnav label, .rightnav input, .rightnav button {
-    margin: 10px 50px;
-    font-size: 16px;
-  }
+  
+  
+  
