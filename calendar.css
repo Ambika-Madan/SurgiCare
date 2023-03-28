@@ -15,7 +15,7 @@
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: auto repeat(6, 1fr);
     gap: 10px;
-    max-width: 700px;
+    max-width: 701px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
