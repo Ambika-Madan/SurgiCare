@@ -19,12 +19,18 @@ nav {
     float: right ;
     padding: 6px;
     border: none;
+<<<<<<< HEAD
     margin-top: 8px;
     margin-right: 1px;
     font-size: 17px;
     border-style: ridge;
     border-width: 3%;
     border-color: black;
+=======
+    margin-top: 7px;
+    margin-right: 3px;
+    font-size: 16px;
+>>>>>>> 23149c614f1f53ab77a7ee304ceb288dacba3207
    
   }
 nav a {width: 150px;
