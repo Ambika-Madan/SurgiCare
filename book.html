@@ -12,6 +12,11 @@
         .book{
             background-color: antiquewhite;
         }
+        .details{
+            padding-left: 45%;
+            background-color: azure;
+        }
+
     </style>
 </head>
 <body>
@@ -19,7 +24,7 @@
         <div class="book">
             <h1>Appointment booking form</h1>
         </div>
-    <div class details>
+    <div class ="details">
         <h5>Name</h5>
         <input type="text" name="Name" id="Name" align-item ="right" >
         <h5>Age</h5>
@@ -29,7 +34,22 @@
         <button class="btn-color">Female</button>
         <h7> OTHER</h7>
         <input type="text" name="search" id="search" align-item ="right" >
+        <h5>Time</h5>
+        <div class="time slot">
+        <label for="time">Time Slot:</label>
+    <select name="doctor-names" id="doctor-names">
+      <option value="select"></option>
+    <option value="9-11">9am-11am</option>
+    <option value="11-1">11am-1pm</option>
+    <option value="1-3"> 1pm-3pm</option>
+    <option value="3-5">3pm-5pm</option> 
+</div>
     </div>
+    <div class="confirm">
+     <h5>Confirm Appointment</h5>
+     <button class="btn-color">Confirm</button>  
+    </div>  
+     </div>
     </form>
 </body>
 </html>
