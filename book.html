@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{background-image: url('img/blue.png');
+            background-color: antiquewhite;
+        }
+        .book{
+            background-color: antiquewhite;
+        }
+        .details{
+            padding-left: 45%;
+            background-color: azure;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <div class="book">
+            <h1>Appointment booking form</h1>
+        </div>
+    <div class ="details">
+        <h5>Name</h5>
+        <input type="text" name="Name" id="Name" align-item ="right" >
+        <h5>Age</h5>
+        <input type="number" name="age" id="age" align-item ="right" >
+        <h5>sex</h5>
+        <button class="btn-color">MALE</button>
+        <button class="btn-color">Female</button>
+        <h7> OTHER</h7>
+        <input type="text" name="search" id="search" align-item ="right" >
+        <h5>Time</h5>
+        <div class="time slot">
+        <label for="time">Time Slot:</label>
+    <select name="doctor-names" id="doctor-names">
+      <option value="select"></option>
+    <option value="9-11">9am-11am</option>
+    <option value="11-1">11am-1pm</option>
+    <option value="1-3"> 1pm-3pm</option>
+    <option value="3-5">3pm-5pm</option> 
+    </select>
+    <h5>Confirm Appointment</h5>
+    <a href="confirm.html"><button class="btn-color">Confirm</a></button>  
+</div>
+    </div>
+   
+    
+     
+     </div>
+    </form>
+</body>
+</html>
