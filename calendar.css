@@ -191,7 +191,7 @@ body {
 #calendar_weekdays,
 #calendar_header {
     position: relative;
-    width: 320px;
+    width: 310px;
     overflow: hidden;
     float: left;
     z-index: 10;
@@ -200,7 +200,7 @@ body {
 
 #calendar_weekdays div,
 #calendar_content div {
-    width: 40px;
+    width: 30px;
     height: 40px;
     overflow: hidden;
     text-align: center;
@@ -235,13 +235,13 @@ body {
     height: 37px;
     text-align: center;
     background-color: #FF6860;
-    padding: 18px 0;
-    -webkit-border-radius: 12px 12px 0px 0px;
+    padding: 16px 0;
+    -webkit-border-radius: 11px 12px 0px 0px;
     -moz-border-radius: 12px 12px 0px 0px;
     border-radius: 12px 12px 0px 0px;
 }
 #calendar_header h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #FFFFFF;
     float: left;
     width: 70%;
