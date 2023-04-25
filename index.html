@@ -87,14 +87,17 @@
     appId: "1:915960625499:web:c8c82cb524dcd97637027e",
     measurementId: "G-SMP5D3R94B"
   };
+  firebase.initializeApp(firebaseConfig);
 
+  const contactFormDB = firebase.database().ref('contactForm');
+  document.getElementById("contactForm").addEventListener("submit",)
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const database = getDatabase(app);
   const auth = getAuth();
 
   login.addEventListener('click',(e) =>
-  { var email = document.getElementById('email').value;
+  {  var email = document.getElementById('email').value;
      var password = document.getElementById('password').value;
    createUserWithEmailAndPassword(auth, email, password)
    .then((userCredential) => {
