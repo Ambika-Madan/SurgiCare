@@ -29,8 +29,11 @@
 		<button class="social-signin google" id="googlelogin">Log in with Google</button>
 		
 		<a href="signup.html"><button class="sign-up" id="sign-up">Sign-Up</a></button>
-		  
+		<a href="forgot.html"><button class="btn-color" id="forgotpassword">Forgot Password</a></button>
 	  </div>
+	 
+			  
+	
 	  
 	</div>
 	</div>
@@ -65,34 +68,6 @@
 	  const auth1= getAuth();
 	  const provider = new GoogleAuthProvider(app)
 	
-	// sighUp.addEventListener('click',(e) => {
-	
-	//   var email = document.getElementById('email').value;
-	//   var password = document.getElementById('password').value;
-	//   var username = document.getElementById('username').value;
-	
-	//   createUserWithEmailAndPassword(auth, email, password)
-	//     .then((userCredential) => {
-	//      // Signed in 
-	//       const user = userCredential.user;
-	
-	//       set(ref(database, 'users/' + user.uid),{
-	//           username: username,
-	//           email: email
-	//       })
-	
-	//       alert('user created!');
-	//       // ...
-	//     })
-	//     .catch((error) => {
-	//       const errorCode = error.code;
-	//       const errorMessage = error.message;
-	
-	//       alert(errorMessage);
-	//     // ..
-	//     });
-	
-	// });
 	
 	 googlelogin.addEventListener('click',(e) => {
 	
@@ -194,127 +169,3 @@
 	
 	</html>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>SurgiCare - Book your Appointment Now</title>
-	<link rel="stylesheet" href="login.css" />
-
-	<style>
-		body{
-			background-image:url('img/login.jpg');
-		}
-		
-		 
-	</style>
-</head>
-
-<body>
-	<p style="background-image:url('img/login.jpg');">
-	
-         
-		
-	<div class="category">
-       
-	</div>
-	
-		
-	 
-	<div class="login-page">
-		
-		<div class="login-form">
-			<img src="img/logo.gif.gif"
-		height="70"
-		width="70" >
-			<h3>Login to access your account</h3>
-			<button class="btn-color" id="doctor" type="submit">Doctor
-			</button>
-			<button class="btn-color" id="patient" type="submit">Patient</button>
-			<form id="logInForm">
-				<p id="error"></p>
-				<p id="errorPwd"></p>
-				<div class="email">
-					<input type="email" id="email" placeholder="Email" required />
-				</div>
-				<div class="password">
-					<input type="password" id="password" placeholder="Password" required />
-				</div>
-				<div class="log-in">
-					<button class="btn-color" id="login" type="submit">
-                        <a href="SUR.html">
-						<span id="spanLogin">Login</span>
-						<span id="spanLoading">Loading...</span>
-					</button>
-				</div>
-			</form>
-			<p>Don't have an account? <a href="signup.html">Sign up</p>
-			<p>Forget password account?<a href="forgot.html">Forget password</a></p>
-			<div class="google">
-				<button class="btn-google" id="sign-in">
-                    <a href="SUR.html">Login with Google</a>
-				</button>
-			</div>
-			
-			</div>
-        </div>
-	</div>
-</body>
-
-<script type="module">
-  // Import the functions you need from the SDKs you need
- 
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
-  import {getDatabase} from "https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyAr0dbM2Noo6h6MFKfkS26opPbIqCGE6Jk",
-    authDomain: "surgi-53a89.firebaseapp.com",
-    databaseURL: "https://surgi-53a89-default-rtdb.firebaseio.com",
-    projectId: "surgi-53a89",
-    storageBucket: "surgi-53a89.appspot.com",
-    messagingSenderId: "200161515574",
-    appId: "1:200161515574:web:7dbe37be8ae4498b19e097"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const database = getDatabase(app);
-  const auth = getAuth();
-
-  login.addEventListener('click',(e) =>
-  {  var email = document.getElementById('email').value;
-     var password = document.getElementById('password').value;
-   createUserWithEmailAndPassword(auth, email, password)
-   .then((userCredential) => {
-    // Signed in 
-     const user = userCredential.user;
-	 set(ref(database, 'users/' ))
-    // ...
-   })
-   .catch((error) => {
-     const errorCode = error.code;
-     const errorMessage = error.message;
-     
-	 alert('errorMessage');
-   });
-});
-</script>
-	
-	
-</html> -->

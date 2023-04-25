@@ -1,55 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SurgiCare - Book your Appointment Now</title>
-    <link rel="stylesheet" href="forgot.css">
-    <style>
-       
-       body{
-		background-image: url('img.login.jpg');
-	   }
-       
-    </style>
-   
+  <meta charset="UTF-8">
+  <title>Forgot Password</title>
+  <style>
+    /* Center the page content */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Style the form */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style the form fields */
+    input[type=email] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style the form button */
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style the form button on hover */
+    button:hover {
+      background-color: #0062cc;
+    }
+  </style>
 </head>
 <body>
-	
-	
-         
-		
-	<!-- <div class="category">
-       
-	</div> -->
-	
-		
-	 
-	<div class="login-page">
-		
-		<div class="login-form">
-			
-			<h3>Login to access your account</h3>
-			
-			
-				
-				<div class="email">
-					<input type="email" id="email" placeholder="Email" required />
-				</div>
-				
-				<div class="password">
-					<input type="password" id="password" placeholder="Password" required />
-				</div>
-				<div class="confirm">
-                    <input type="confirm password" id="confirm password" placeholder="Confirm-Password" required/>
-                </div>               
-		
-			
-			
-			
-			</div>
-        </div>
-	</div>
+  <form method="POST" action="/forgot_password">
+    <h2>Forgot Password</h2>
+    <p>Please enter your email address to reset your password:</p>
+    <input type="email" name="email" placeholder="Email address" required>
+    <button type="submit">Reset Password</button>
+  </form>
 </body>
+<script>
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+
+const app = express();
+
+// Parse incoming request bodies in a middleware before your handlers
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get('/forgot_password', (req, res) => {
+  // Render the forgot password form
+  res.render('forgot_password');
+});
+
+app.post('/forgot_password', (req, res) => {
+  // Get the user's email address from the form data
+  const email = req.body.email;
+
+  // Generate a unique password reset token (you'll need to implement this logic)
+  const token = generateResetToken(email);
+
+  // Create a Nodemailer transporter with your email service's SMTP settings
+  const transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+      user: 'your_email_address@gmail.com',
+      pass: 'your_email_password'
+    }
+  });
+  </script>
 </html>
+
+ 
+
+
+
+
+
