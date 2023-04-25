@@ -4,9 +4,10 @@
   }
   
   body {
+	background-image: url('img/login.jpg');
     margin: 0;
     padding: 0;
-    background: #DDD;
+    
     font-size: 16px;
     color: #222;
     font-family: 'Roboto', sans-serif;
@@ -14,11 +15,15 @@
   }
   
   #login-box {
+
+	border-style: dashed;
+	padding-left: 26%;
+	padding-top: 4%;
     position: relative;
     margin: 5% auto;
     width: 600px;
     height: 400px;
-    background: #FFF;
+    background: #27637c;
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   }
