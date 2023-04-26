@@ -7,7 +7,7 @@
   body {
     margin: 0;
     padding: 0;
-    background: #87bdd6;
+    
     font-size: 16px;
     color: #222;
     font-family: 'Roboto', sans-serif;
@@ -20,7 +20,7 @@
     margin: 5% auto;
     width: 600px;
     height: 400px;
-    background: #6c99b5;
+    background: #365f78;
     border-radius: 2px;
 	border-style: dashed;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
