@@ -18,7 +18,7 @@
         $age = $_POST['age'];
         $phone = $_POST['phone'];
 
-        $sql_query = "INSERT INTO entry_details (first_name, last_name, gender, email, age, mobile)
+        $sql_query = "INSERT INTO entry_details (firstName, lastName, gender, email, age, mobile)
             VALUES ('$firstName', '$lastName', '$gender', '$email','$age', '$phone')";
 
 if (mysqli_query($conn, $sql_query)) 
