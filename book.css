@@ -1,0 +1,45 @@
+/* Add custom CSS styles here */
+body{
+    background-image:url('img/login.jpg');
+}
+.form-group{
+    padding-left: 40%;
+ 
+   
+}
+.container { background-color: antiquewhite;
+    margin-top: 50px;
+  }
+  
+  .panel-primary {background-color: rgb(70, 158, 129); 
+    margin-top: 50px;
+  }
+  
+  .panel-heading {
+    background-color: #337ab7;
+    color: #fff;
+  }
+  
+  .panel-body { padding-left: 35%;
+    padding: 30px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  .btn{
+    background-color: #204d74;
+  }
+  .btn-primary { 
+    background-color: #337ab7;
+    border-color: #2e6da4;
+  }
+  
+  .btn-primary:hover {
+    background-color: #286090;
+    border-color: #204d74;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  

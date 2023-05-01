@@ -43,7 +43,64 @@
             <input type="submit">
           </form>
         
-    
+        <div class="edit-content">
+            <div class="editor" contenteditable="true" id="editor">Enter your content here...</div>
+            <p class="loading" id="loading">Saving document....</p>
+            </div>
+            
+            <button onclick="saveFile()">Save Docx File</button>
+            
+            <!-- Script to save content to Local Storage -->
+            <script>
+            function saveFile() {
+              const editor = document.getElementById('editor');
+              const content = editor.textContent; // Get the plain text content
+              
+              // Create a Blob object with the content
+              const blob = new Blob([content], {type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'});
+              
+              // Create a download link
+              const downloadLink = document.createElement('a');
+              downloadLink.href = URL.createObjectURL(blob);
+              downloadLink.download = 'document.docx'; // Set the filename
+              
+              // Append the download link to the DOM and trigger a click event
+              document.body.appendChild(downloadLink);
+              downloadLink.click();
+              
+              // Clean up by removing the download link
+              document.body.removeChild(downloadLink);
+            }
+          </script>
+      <button onclick="uploadTextFile()">Upload Docx File</button>
+      
+      <script>
+        function uploadTextFile() {
+          const fileInput = document.createElement('input');
+          fileInput.type = 'file';
+          fileInput.accept = '.docx';
+          
+          // Event listener for file input change event
+          fileInput.addEventListener('change', function(e) {
+          const file = e.target.files[0]; // Get the selected file
+          
+          if (file) {
+            const reader = new FileReader();
+            
+            // Event listener for file reader load event
+            reader.addEventListener('load', function(e) {
+            const fileContent = e.target.result; // Get the file content as text
+            // Set the file content in the contenteditable div
+            document.getElementById('editor').textContent = fileContent;
+            });
+            
+            reader.readAsText(file); // Read the file as text
+          }
+          });
+          
+          fileInput.click(); // Trigger file input click event
+        }
+        </script>
     </div>
     
 </body>
